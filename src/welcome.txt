@@ -1,0 +1,21 @@
+         ---> Bem-vindo(a) ao Zombie Dice (v 0.1) <--
+                -- copyright DIMAp/UFRN 2024-2025 --
+
+  O objetivo do jogo de dados de risco Zombie Dice é ser o primeiro a comer 13 ou mais cérebros humanos em um turno.
+  O turno de cada jogador consiste em rolar repetidamente 3 dados. Um dado pode produzir 3 resultados: você comeu um cérebro, 
+  o humano escapou ou você levou um tiro!
+  Se você levar 3 ou mais tiros, você morre e perde todos os cérebros que comeu naquele turno; então o turno passa para o próximo jogador. 
+  No entanto, se você decidir parar antes de levar 3 tiros, você mantém os cérebros que comeu.
+
+  Antes de começarmos, por favor, digite os nomes dos jogadores
+  em uma única linha, separados por vírgula. Por exemplo:
+  >>> Jack, Menace, Ultraz, Boris
+  
+  Lembrando que nomes vazios não serão considerados.
+  Os nomes devem ter menos de 23 digitos.
+  
+  Mínimo de 2 jogadores, máximo de 6 (alterável em zdice.ini).
+  Fornecer uma linha vazia encerrará o jogo.
+  >>>
+
+
