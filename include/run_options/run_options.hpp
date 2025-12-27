@@ -1,6 +1,6 @@
 #ifndef ZDICE_GAME
 #define ZDICE_GAME
-#include "game_data.hpp"
+#include "../game_data/game_data.hpp"
 #include "iomanip"
 
 namespace zdice{
@@ -8,14 +8,15 @@ namespace zdice{
 class Game {
 private:
 
-std::map<std::string, bool> player_Options{     //PARECE INÚTIL EU SEI (de fato é um pouco rs)
-{"H", end_turn}, {"h", end_turn},               //Mapeia cada comando com uma variável booleana (não usei pra isso rs)
+std::map<std::string, bool> player_Options{             
+{"H", end_turn}, {"h", end_turn},           //Mapeia cada comando com uma variável booleana (não usei pra isso rs)
 {"-h", true},                                   //(usei para conferir se é um comando válido).
 {"", continue_turn},
 {"Q", end_game}, {"q", end_game}
 };
 
 public:
+
 bool end_switch{false};         //switches que dizem o estado do jogo.
 bool end_game{false};
 bool end_turn{false};

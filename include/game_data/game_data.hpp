@@ -10,7 +10,7 @@
 #include <fstream>
 
 
-#include "dice.hpp"
+#include "../dice/dice.hpp"
 
 
 
@@ -28,9 +28,9 @@ class GameFlow {
   size_t max_players    = 6;                //número máximo permitido de jogadores (pode ser alterado no zdice.ini)
   
 
-  std::string green_dice_faces = "bbbffs";    //faces (podem ser alteradas no zdice.ini)
+  std::string green_dice_faces  = "bbbffs";    //faces (podem ser alteradas no zdice.ini)
   std::string yellow_dice_faces = "bbffss";
-  std::string red_dice_faces = "bffsss";
+  std::string red_dice_faces    = "bffsss";
 
   std::vector<Dice> footprintDices;   //vetor que armazena todos os dados de pegada que puxarmos.
 public:
@@ -47,7 +47,7 @@ public:
   std::string Faces_on_table;           //string que armazena as faces que caíram após alguma jogada.
   std::vector<Dice> Dices_in_Game;      //vetor que armazena todos os dados que foram puxados no turno de algum jogador.
 
-  size_t small_name     = 1;   //menor tamanho de nome possivel.
+  size_t smallest_name     = 1;   //menor tamanho de nome possivel.
   size_t dice_qnt       = 13;  //informações que são alteraveis no zdice.ini
   size_t turn_player    = 0;
   size_t turns_qnt      = 1;
