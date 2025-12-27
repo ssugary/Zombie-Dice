@@ -6,7 +6,6 @@ O projeto basicamente é uma versão virtual do jogo Zombie Dice Deluxe.
 
 # Author(s)
 
-
 nome: Heitor Fernandes Paes Leme Campos
 email: Heitor.campos.711@ufrn.edu.br
 
@@ -48,11 +47,11 @@ Preencha os itens que você implementou, indicando qual a nota esperada para cad
 # Compiling and Runnig
 
 <!-- TODO -->
-primeiro abra o terminal e entre no diretório  ./trabalho-06-projeto-zombie-dice-thriller/src/
+primeiro abra o terminal e entre no diretório  ./src/
 
 execute o comando:
 
-c++ main.cpp dice.cpp game_data.cpp run_options.cpp -o zdice
+c++ main.cpp dice/dice.cpp game_data/game_data.cpp run_options/run_options.cpp -o zdice
 
 após isso, use o comando:
 
