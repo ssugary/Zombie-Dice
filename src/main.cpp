@@ -32,7 +32,7 @@
     SetConsoleOutputCP(CP_UTF8);
 #endif
 
-#include "run_options.hpp"
+#include "../include/run_options/run_options.hpp"
 
 
 using namespace zdice;
@@ -46,7 +46,6 @@ using namespace zdice;
     game.infos.set_dices();                 //prepara os dados para serem jogados.
 
     if(!game.infos.set_info())return 0;     //prepara as informações de cada jogador, caso não tenha nenhum jogador, acaba a func.
-
 
 
     while(true){
